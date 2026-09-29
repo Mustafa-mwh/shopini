@@ -1,0 +1,11 @@
+body{margin:0;background:#FFFFFF;color:#0E1124}
+*{box-sizing:border-box}
+button,input,select,textarea{font-family:inherit;color:inherit}
+a{color:#0D32D6;text-decoration:none;cursor:pointer}
+a:hover{color:#0A28AC}
+[data-noscroll]::-webkit-scrollbar{display:none}
+button{transition:transform .12s cubic-bezier(.2,.7,.2,1),background-color .2s,border-color .2s,color .2s,box-shadow .2s}
+button:not(:disabled):active{transform:scale(.97)}
+a{transition:color .15s,background-color .15s}
+input:focus,select:focus,textarea:focus{border-color:#0D32D6 !important;box-shadow:0 0 0 3px #EDF0FF}
+@media (prefers-reduced-motion: reduce){*{transition:none !important}}
