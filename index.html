@@ -1407,14 +1407,19 @@
                     ></div>
                   </div>
                   <a
+                    class="mk-all"
                     sc-camel-on-click="{{ market.go }}"
                     style="
                       font-weight: 600;
                       display: flex;
                       gap: 4px;
                       align-items: center;
+                      white-space: nowrap;
+                      flex-shrink: 0;
                     "
-                    >عرض الكل ({{ market.count }})<i class="icon-arrow-left"></i
+                    >عرض الكل<span style="color: #9a9fb3; font-weight: 500"
+                      >({{ market.count }})</span
+                    ><i class="icon-arrow-left"></i
                   ></a>
                 </div>
                 <div class="pgrid"
@@ -6220,6 +6225,7 @@
                   <span style="color: #5f6480">دقيقة وحدة وتبدأ تتسوّق</span>
                 </div>
                 <div
+                  class="reg-names"
                   style="
                     display: grid;
                     grid-template-columns: 1fr 1fr;
@@ -8196,6 +8202,7 @@
               </div>
             </div>
             <div
+              class="nl-box"
               style="
                 margin: 32px 0;
                 border-radius: 24px;
@@ -8222,6 +8229,7 @@
                 >
               </div>
               <div
+                class="nl-form"
                 style="
                   display: flex;
                   gap: 8px;
@@ -8670,6 +8678,7 @@
 
         <sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}">
           <div
+            class="toast"
             ref="{{ rf.toast }}"
             style="
               position: fixed;
